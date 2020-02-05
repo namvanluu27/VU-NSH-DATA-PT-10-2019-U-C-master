@@ -1,0 +1,36 @@
+header {
+    text-align: center;
+}
+
+h1 {
+    color: orange;
+}
+
+h2 {
+    color: navy;
+}
+
+h3 {
+    color: lime;
+}
+
+.first {
+    float: center;
+    font-weight: 600;
+}
+
+img {
+    box-shadow: 5px 10px grey;
+}
+
+section {
+    background-color: wheat;
+}
+
+p { 
+    font-size: 16px;
+}
+
+ul {
+    border: 3px solid purple; 
+}
