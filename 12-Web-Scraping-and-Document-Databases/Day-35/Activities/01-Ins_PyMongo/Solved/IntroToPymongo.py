@@ -43,15 +43,15 @@ db.classroom.update_one(
      }
 )
 
-# Delete a field from a document
-db.classroom.update_one({'name': 'Ahmed'},
-                        {'$unset':
-                         {'gavecandy': ""}
-                         }
-                        )
+# # Delete a field from a document
+# db.classroom.update_one({'name': 'Ahmed'},
+#                         {'$unset':
+#                          {'gavecandy': ""}
+#                          }
+#                         )
 
 
-# Delete a document from a collection
-db.classroom.delete_one(
-    {'name': 'Ahmed'}
-)
+# # Delete a document from a collection
+# db.classroom.delete_one(
+#     {'name': 'Ahmed'}
+# )
