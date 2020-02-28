@@ -9,8 +9,25 @@ var recipes = [
   { dish: "Hog fry", spice: "Peppermint" },
   { dish: "Corn chowder", spice: "Akudjura" },
   { dish: "Home fries", spice: "Celery leaf" },
-  { dish: "Hot chicken", spice: "Boldo" }];
-
+  { dish: "Hot chicken", spice: "Boldo" }
+];
 console.log(recipes);
-
+var dishes = [];
+var spices = [];
+recipes.forEach((recipe) => {
+  Object.entries(recipe).forEach(([key, value]) => {
+    if (key === "dish") {
+      dishes.push(value);
+    }
+    else {
+      spices.push(value);
+    }
+  });
+});
+console.log(dishes);
+console.log(spices);
 // @TODO: YOUR CODE HERE
+var dishesMapped = recipes.map(recipe => recipe.dish);
+var spicesMapped = recipes.map(recipe => recipe.spice);
+console.log(dishesMapped);
+console.log(spicesMapped);

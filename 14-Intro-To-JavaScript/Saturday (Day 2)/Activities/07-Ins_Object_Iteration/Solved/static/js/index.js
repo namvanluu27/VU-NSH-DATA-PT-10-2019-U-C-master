@@ -21,8 +21,7 @@ var users = [
   { name: "Cassandra", age: 27, location: "North America" }];
 
 // Loop through array of objects then each object
-users.forEach((user) => {
-  console.log(user);
+users.forEach((user) => {console.log(user);
 
   // Get the entries for each object in the array
   Object.entries(user).forEach(([key, value]) => {
